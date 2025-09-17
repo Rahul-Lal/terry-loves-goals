@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,11 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./media/images/favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
 </head>
+
 <body>
     <div class="container">
         <div class="goals-app">
@@ -16,15 +21,13 @@
             </div>
             <div class="row">
                 <input type="text" id="input-box" placeholder="Add Your Goal">
-                <button onclick="addGoal()">Add</button>
+                <button id="add-btn">Add</button>
             </div>
-            <ul id="list-container">
-                <!-- 
-                    <li class="checked">Task 1</li>
-                    <li>Task 2</li>
-                -->
-            </ul>
+            <ul id="list-container"></ul>
+
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

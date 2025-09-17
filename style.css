@@ -4,48 +4,48 @@ body {
     margin: 0;
     padding: 0;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 100vh;
-    background-image: url('./media/images/background.gif'); 
+    background-image: url('./media/images/Cat Wtf GIF.gif');
     padding: 10px;
 }
 
-.goals-app{
+.goals-app {
     width: 100%;
     max-width: 540px;
     background: #000;
-    fill-opacity: 0.25;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
 
-.goals-app h2{
-    color: #002765;
+.goals-app h2 {
+    color: #fff;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     font-family: "Bebas Neue", sans-serif;
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: 400;
     font-style: normal;
-    
 }
-.goals-app h2 img{
+
+.goals-app h2 img {
     width: 33px;
     height: 33px;
     margin-left: 10px;
 }
 
-.row{
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,7 +55,13 @@ body {
     margin-bottom: 25px;
 }
 
-input{
+#input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
     flex: 1;
     border: none;
     outline: none;
@@ -63,7 +69,7 @@ input{
     padding: 10px;
 }
 
-button{
+button {
     border: none;
     outline: none;
     padding: 16px 50px;
@@ -74,7 +80,7 @@ button{
     border-radius: 40px;
 }
 
-ul li{
+ul li {
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -83,7 +89,7 @@ ul li{
     position: relative;
 }
 
-ul li:hover{
+ul li:hover {
     background: #edeef0;
     transition-duration: 0.3s;
 }
