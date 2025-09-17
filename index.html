@@ -23,8 +23,17 @@
                 <input type="text" id="input-box" placeholder="Add Your Goal">
                 <button id="add-btn">Add</button>
             </div>
-            <ul id="list-container"></ul>
+            <ul id="list-container">
+            </ul>
 
+        </div>
+
+        <div class="modal-overlay" id="alertBox">
+            <div class="modal">
+                <h2 id="alertMessage"></h2>
+                <img id="alertGif" src="" alt="Alert GIF">
+                <button onclick="closeCustomAlert()">OK</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

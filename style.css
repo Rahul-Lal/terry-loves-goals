@@ -29,20 +29,14 @@ body {
 }
 
 .goals-app h2 {
-    color: #fff;
+    color: #fffb00;
+    font-style: italic;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     font-family: "Bebas Neue", sans-serif;
     font-size: xx-large;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.goals-app h2 img {
-    width: 33px;
-    height: 33px;
-    margin-left: 10px;
+    font-weight: 500;
 }
 
 .row {
@@ -55,7 +49,7 @@ body {
     margin-bottom: 25px;
 }
 
-#input-section {
+#input-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,22 +61,27 @@ input {
     outline: none;
     background: transparent;
     padding: 10px;
+    font-style: italic;
+    font-size: 23px;
 }
 
 button {
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
-    color: #fff;
-    font-size: 16px;
+    background: #fffb00;
+    color: #000;
+    font-style: italic;
+    font-size: 25px;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 15px;
 }
 
 ul li {
     list-style: none;
-    font-size: 17px;
+    color: #fffb00;
+    font-style: italic;
+    font-size: 23px;
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
@@ -91,6 +90,7 @@ ul li {
 
 ul li:hover {
     background: #edeef0;
+    color: #000;
     transition-duration: 0.3s;
 }
 
@@ -140,3 +140,45 @@ ul li span:hover {
     flex-direction: column;
     align-items: center;
 }
+
+/* For the alert box */
+.modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      max-width: 320px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: pop 0.3s ease-out;
+    }
+
+    .modal img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    .modal button {
+      margin-top: 15px;
+      padding: 8px 16px;
+      border: none;
+      background: #007BFF;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
