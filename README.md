@@ -1,5 +1,5 @@
 # 🏆 Terry Loves Goals
-A simple and interactive Goal List web app inspired by Brooklyn Nine-Nine’s Terry Jeffords — because Terry loves goals!
+A simple and interactive Goal List web app inspired by [Brooklyn Nine-Nine’s Terry Jeffords](https://brooklyn99.fandom.com/wiki/Terry_Jeffords) — because Terry loves goals!
 
 # 🚀 Features
 - Add new goals to your list
